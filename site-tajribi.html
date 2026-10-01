@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سایت تجربی 😂</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: Tahoma, Arial, sans-serif;
+        background: linear-gradient(135deg, #111827, #312e81);
+        color: white;
+    }
+    header {
+        padding: 22px;
+        text-align: center;
+        background: rgba(0,0,0,.25);
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(10px);
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 8px;
+        padding: 10px 14px;
+        border-radius: 12px;
+        display: inline-block;
+    }
+    nav a:hover { background: rgba(255,255,255,.15); }
+    .hero {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+    .card {
+        max-width: 700px;
+        width: 100%;
+        padding: 45px 25px;
+        border-radius: 25px;
+        background: rgba(255,255,255,.1);
+        box-shadow: 0 20px 60px rgba(0,0,0,.3);
+    }
+    h1 { font-size: 42px; margin-bottom: 10px; }
+    p { font-size: 18px; line-height: 1.9; color: #e5e7eb; }
+    .btn {
+        border: 0;
+        cursor: pointer;
+        padding: 14px 24px;
+        border-radius: 14px;
+        font-size: 17px;
+        margin-top: 15px;
+        background: #facc15;
+        color: #111827;
+        font-weight: bold;
+    }
+    section {
+        padding: 70px 20px;
+        text-align: center;
+    }
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .box {
+        width: 250px;
+        padding: 25px;
+        border-radius: 20px;
+        background: rgba(255,255,255,.1);
+    }
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: rgba(0,0,0,.3);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h2>سایت تجربی 😂</h2>
+    <nav>
+        <a href="#home">خانه</a>
+        <a href="#about">درباره</a>
+        <a href="#sections">بخش‌ها</a>
+        <a href="#exit" onclick="wrongPlace(event)">برو بیرون 😎</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="card">
+            <h1>سلام 😂</h1>
+            <p>به سایت تجربی خوش اومدی! این سایت برای تست و سرگرمی ساخته شده.</p>
+            <button class="btn" onclick="wrongPlace()">برو بیرون، اشتباه اومدی 😂</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>درباره سایت</h2>
+        <p>یک سایت ساده و خنده‌دار با چند بخش و منوی بالا.</p>
+    </section>
+
+    <section id="sections">
+        <h2>بخش‌ها</h2>
+        <div class="boxes">
+            <div class="box"><h3>بخش اول</h3><p>اینجا می‌تونی هر چیزی که خواستی اضافه کنی.</p></div>
+            <div class="box"><h3>بخش دوم</h3><p>برای آزمایش امکانات مختلف سایت.</p></div>
+            <div class="box"><h3>بخش سوم</h3><p>فعلاً اینجا فقط جای تست داریم 😂</p></div>
+        </div>
+    </section>
+</main>
+
+<footer id="exit">
+    ساخته شده برای تست 😂
+</footer>
+
+<script>
+function wrongPlace(e) {
+    if (e) e.preventDefault();
+    alert("😂 برو بیرون! اشتباه اومدی!");
+}
+</script>
+
+</body>
+</html>
